@@ -1,0 +1,36 @@
+---
+driver:
+  name: vagrant
+  provision: true
+  vagrantfiles:
+    - mac_vagrant.rb
+  synced_folders:
+    - [".", "/vagrant", "type: :rsync"]
+
+provisioner:
+  name: ansible_playbook
+  hosts: test-kitchen
+  ansible_sudo: false
+  require_ansible_repo: false
+  require_ansible_omnibus: true
+  require_pip: true
+  require_ruby_for_busser: true
+  require_chef_for_busser: false
+  ansible_extra_flags: <%= ENV['ANSIBLE_EXTRA_FLAGS'] %>
+  ansible_binary_path: /usr/local/bin
+
+verifier:
+  name: busser
+  ruby_bindir: '/usr/bin'
+  sudo: false
+
+platforms:
+  - name: macosx-10.10
+    driver:
+      box: macosx-10.10
+  - name: macosx-10.11
+    driver:
+      box: macosx-10.11
+
+suites:
+  - name: default

@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Mika Mannermaa
+  description: Mac OS X preferences playbook
+  license: Apache 2.0
+  min_ansible_version: 2.0
+  platforms:
+  - name: GenericUNIX
+    versions:
+    - all
+    - any
+  galaxy_tags:
+    - osx
+    - mac
+    - settings
+    - preferences
+
+dependencies: []
+

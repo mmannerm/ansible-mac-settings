@@ -1,0 +1,7 @@
+---
+user: "{{ ansible_user_id }}"
+mac_settings:
+  keyboard:
+    repeat: 10
+    initial_repeat: 2
+

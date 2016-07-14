@@ -1,0 +1,25 @@
+---
+- hosts: test-kitchen
+  gather_facts: true
+  roles:
+    - role: ansible-mac-settings
+      mac_settings:
+        keyboard:
+          repeat: 0
+          initial_repeat: 25
+          auto_correct: false
+          smart_quotes: false
+          smart_dashes: false
+          char_picker: false
+        animations:
+          window: false
+          smooth_scrolling: true
+          resize: 0.001
+          quick_look: 0
+          fs_toolbar: 0
+          column_view_scroll: 0
+          expose: 0
+          launchpad_show: 0
+          launchpad_hide: 0
+          launchpad_page: 0
+          dock_app_launch: false
