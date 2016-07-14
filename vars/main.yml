@@ -1,0 +1,79 @@
+---
+mac_defaults:
+
+  keyboard:
+    repeat:
+      type: int
+      domain: NSGlobalDomain
+      key: KeyRepeat
+    initial_repeat:
+      type: int
+      domain: NSGlobalDomain
+      key: InitialKeyRepeat
+    auto_correct:
+      type: bool
+      domain: NSGlobalDomain
+      key: NSAutomaticSpellingCorrectionEnabled
+    smart_quotes:
+      type: bool
+      domain: NSGlobalDomain
+      key: NSAutomaticQuoteSubstitutionEnabled
+    smart_dashes:
+      type: bool
+      domain: NSGlobalDomain
+      key: NSAutomaticDashSubstitutionEnabled
+    char_picker:
+      type: bool
+      domain: NSGlobalDomain
+      key: ApplePressAndHoldEnabled
+    languages:
+      type: array
+      domain: NSGlobalDomain
+      key: AppleLanguages
+
+  animations:
+    window:
+      type: bool
+      domain: NSGlobalDomain
+      key: NSAutomaticWindowAnimationsEnabled
+    smooth_scrolling:
+      type: bool
+      domain: NSGlobalDomain
+      key: NSScrollAnimationEnabled
+    resize:
+      type: float
+      domain: NSGlobalDomain
+      key: NSWindowResizeTime
+    quick_look:
+      type: float
+      domain: NSGlobalDomain
+      key: QLPanelAnimationDuration
+    fs_toolbar:
+      type: float
+      domain: NSGlobalDomain
+      key: NSToolbarFullScreenAnimationDuration
+    column_view_scroll:
+      type: float
+      domain: NSGlobalDomain
+      key: NSBrowserColumnAnimationSpeedMultiplier
+    expose:
+      type: float
+      domain: com.apple.dock
+      key: expose-animation-duration
+    launchpad_show:
+      type: float
+      domain: com.apple.dock
+      key: springboard-show-duration
+    launchpad_hide:
+      type: float
+      domain: com.apple.dock
+      key: springboard-hide-duration
+    launchpad_page:
+      type: float
+      domain: com.apple.dock
+      key: springboard-page-duration
+    dock_app_launch:
+      type: bool
+      domain: com.apple.dock
+      key: launchanim
+
